@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import "./TeamDetails.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {  faFacebookF,faInstagramSquare,faYoutube  } from '@fortawesome/free-brands-svg-icons';
+// import {  faFacebookF,faInstagramSquare,faYoutube  } from '@fortawesome/free-brands-svg-icons';
 
 import {
   faPenNib,
@@ -21,7 +21,7 @@ const TeamDetails = () => {
     fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${id}`)
       .then((res) => res.json())
       .then((data) => setTeam(data.teams[0]));
-  }, []);
+  }, [id]);
   // console.log(team);
   const {
     strAlternate,

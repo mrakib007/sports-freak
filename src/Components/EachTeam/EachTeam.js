@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrow, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-import { Link, useHistory } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
 import './EachTeam.css'
 
 const EachTeam = (props) => {
