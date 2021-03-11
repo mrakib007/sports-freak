@@ -2,8 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import "./TeamDetails.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-solid-svg-icons";
-import { faPenNib,faFutbol,faFlag,faFemale,faMale} from "@fortawesome/free-solid-svg-icons";
+
+import {  faFacebookF,faInstagramSquare,faYoutube  } from '@fortawesome/free-brands-svg-icons';
+
+import {
+  faPenNib,
+  faFutbol,
+  faFlag,
+  faFemale,
+  faMale,
+} from "@fortawesome/free-solid-svg-icons";
+import Footer from "../Footer/Footer";
 
 const TeamDetails = () => {
   const { id } = useParams();
@@ -13,7 +22,7 @@ const TeamDetails = () => {
       .then((res) => res.json())
       .then((data) => setTeam(data.teams[0]));
   }, []);
-  console.log(team);
+  // console.log(team);
   const {
     strAlternate,
     strTeamBadge,
@@ -39,18 +48,26 @@ const TeamDetails = () => {
   let teamBanner;
   if (gender === "Female") {
     female = gender;
-    showGender = <p><FontAwesomeIcon icon={faFemale}></FontAwesomeIcon> Gender :{female}</p>;
+    showGender = (
+      <p>
+        <FontAwesomeIcon icon={faFemale}></FontAwesomeIcon> Gender :{female}
+      </p>
+    );
     teamBanner = <img src={banner2} alt="" />;
   } else {
     male = gender;
-    showGender = <p><FontAwesomeIcon icon={faMale}></FontAwesomeIcon>Gender : {male}</p>;
+    showGender = (
+      <p>
+        <FontAwesomeIcon icon={faMale}></FontAwesomeIcon>Gender : {male}
+      </p>
+    );
     teamBanner = <img src={banner} alt="" />;
   }
 
   return (
     <div>
       {
-        <div className ="text-white">
+        <div className="text-white">
           <div className="container-fluid details-div">
             <div className="image-div img-fluid"></div>
             <div className="team-badge">
@@ -60,11 +77,20 @@ const TeamDetails = () => {
           <div className="team-details container d-flex ">
             <div>
               <h4 className="text-center">{strAlternate}</h4>
-              <p><FontAwesomeIcon icon={faPenNib}></FontAwesomeIcon> Founded : {intFormedYear}</p>
-              <p><FontAwesomeIcon icon={faFutbol}></FontAwesomeIcon> Sport Type : {strSport} </p>
-              <p><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon> Country : {strCountry}</p>
+              <p>
+                <FontAwesomeIcon icon={faPenNib}></FontAwesomeIcon> Founded :{" "}
+                {intFormedYear}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faFutbol}></FontAwesomeIcon> Sport Type :{" "}
+                {strSport}{" "}
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faFlag}></FontAwesomeIcon> Country :{" "}
+                {strCountry}
+              </p>
               {/* <p>Gender : {strGender}</p> */}
-               {showGender}
+              {showGender}
             </div>
             <div className="img-fluid banner">
               {/* <img src={strTeamBanner} alt="" /> */}
@@ -75,8 +101,7 @@ const TeamDetails = () => {
             <p>{strDescriptionEN}</p>
           </div>
           <div className="social-media">
-            {/* <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> */}
-            {/* icons not working */}
+           <Footer></Footer>
           </div>
         </div>
       }

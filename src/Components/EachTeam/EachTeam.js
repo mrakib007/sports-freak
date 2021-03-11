@@ -12,7 +12,7 @@ const EachTeam = (props) => {
     const url = `/team/${idTeam}`;
     history.push(url);
   };
-  console.log(props);
+  // console.log(props);
   return (
     <div className="col-md-3 my-3">
       <Card style={{ width: "18rem" }}>
