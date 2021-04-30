@@ -11,4 +11,4 @@ Live site: https://confident-franklin-af4bf4.netlify.app
 Here are som screenshots of the project.
 Homepage:
 
-  ![alt text](https://www.facebook.com/photo?fbid=1290665944683077&set=a.1290666108016394)
+  ![alt text](https://drive.google.com/drive/u/3/folders/1LBwkuXv_DW1O-VxN50LXRjHwWElanEc3)
