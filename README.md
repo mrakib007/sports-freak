@@ -8,4 +8,6 @@ Sports Freak (February 2021)
 
 Live site: https://confident-franklin-af4bf4.netlify.app
 
-![alt text](https://www.football-italia.net/sites/default/files/imagecache/main_photo/[type]/[nid]/Conte-2101-Inter-epa_3.jpg)
+Here are som screenshots of the project.
+Homepage:
+![alt text](https://drive.google.com/drive/u/3/folders/1LBwkuXv_DW1O-VxN50LXRjHwWElanEc3)
