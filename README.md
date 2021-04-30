@@ -8,7 +8,3 @@ Sports Freak (February 2021)
 
 Live site: https://confident-franklin-af4bf4.netlify.app
 
-Here are som screenshots of the project.
-Homepage:
-
-  ![alt text](https://drive.google.com/drive/u/3/folders/1LBwkuXv_DW1O-VxN50LXRjHwWElanEc3)
